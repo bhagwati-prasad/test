@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../assets/img/daifend_logo.png";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -30,7 +31,7 @@ export default function Navigation() {
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold text-cyber-cyan"
             >
-              Daifend
+              <img src={logo} alt="Daifend Logo" className="h-8" />
             </motion.span>
           </Link>
 
